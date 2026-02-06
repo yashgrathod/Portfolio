@@ -1,6 +1,6 @@
 export const profile = {
     name: "Yash Rathod",
-    title: "Software Engineering Intern",
+    // title: "Software Engineering Intern",
     email: "yashgrathod19@gmail.com",
     linkedin: "https://in.linkedin.com/in/yash-rathod1909",
     github: "https://github.com/yashgrathod",
