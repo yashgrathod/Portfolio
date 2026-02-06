@@ -74,52 +74,6 @@ export const skills = {
     ]
 };
 
-export const professionalBodies = [
-    {
-        name: "Computer Society of India (CSI)",
-        chapter: "SAKEC",
-        designation: "Member",
-        duration: "July 2024 - May 2027",
-        activities: [
-            "Participated in various technical workshops",
-            "Attended seminars on emerging technologies",
-            "Networking with industry professionals"
-        ]
-    }
-];
-
-export const certifications = [
-    {
-        name: "NPTEL Certifications",
-        platform: "NPTEL",
-        description: "Completed various courses on NPTEL platform"
-    },
-    {
-        name: "Coursera Certifications",
-        platform: "Coursera",
-        description: "Online courses from top universities"
-    },
-    {
-        name: "Spoken Tutorial",
-        platform: "Spoken Tutorial IIT Bombay",
-        description: "Technical skill development courses"
-    }
-];
-
-export const workshops = [
-    {
-        category: "Training Programs Attended",
-        items: [
-            {
-                name: "Blockchain Workshop",
-                organizer: "Industry Expert",
-                duration: "2 Days",
-                keyTakeaways: "Understanding blockchain fundamentals, smart contracts, and decentralized applications"
-            }
-        ]
-    }
-];
-
 export const internships = [
     {
         company: "Google AI-ML Virtual Internship Program",
@@ -205,16 +159,6 @@ export const projects = [
     }
 ];
 
-export const research = [
-    {
-        title: "Research Work",
-        area: "To be updated",
-        abstract: "Currently exploring research opportunities in AI/ML domain.",
-        conference: "N/A",
-        contribution: "N/A"
-    }
-];
-
 export const hackathons = [
     {
         name: "Deepblue Season 11 Hackathon 2025",
@@ -252,17 +196,4 @@ export const achievements = [
         description: "Reached Advanced Milestone (August - December 2024)",
         icon: "cloud"
     }
-];
-
-export const navigation = [
-    { name: "Home", href: "#home" },
-    { name: "Skills & Interests", href: "#skills" },
-    { name: "Professional Bodies", href: "#professional" },
-    { name: "Certifications", href: "#certifications" },
-    { name: "Workshops", href: "#workshops" },
-    { name: "Internships", href: "#internships" },
-    { name: "Projects", href: "#projects" },
-    { name: "Research", href: "#research" },
-    { name: "Hackathons", href: "#hackathons" },
-    { name: "Achievements", href: "#achievements" }
 ];
