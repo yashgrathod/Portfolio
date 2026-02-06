@@ -29,11 +29,9 @@ export default function Internships() {
                             className="glass-card p-8 relative" style={{ borderRadius: '20px', overflow: 'visible' }}
                         >
 
-                            {/* Decorative Element */}
                             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-yellow-500/10 to-transparent rounded-bl-full" />
 
                             <div className="flex flex-col lg:flex-row lg:items-start gap-6">
-                                {/* Icon */}
                                 <div className="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/10 rounded-2xl flex items-center justify-center shrink-0">
                                     <Briefcase className="w-8 h-8 text-yellow-400" />
                                 </div>

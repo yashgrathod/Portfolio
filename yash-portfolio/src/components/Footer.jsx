@@ -8,9 +8,7 @@ export default function Footer() {
     return (
         <footer id="contact" className="py-20 bg-[#0a0a0a] border-t border-yellow-500/10" style={{ padding: '20px 0' }}>
             <div className="w-full px-8">
-                {/* Main Footer Content */}
                 <div className="w-full flex flex-col items-center text-center">
-                    {/* Heading */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -25,7 +23,6 @@ export default function Footer() {
                         </p>
                     </motion.div>
 
-                    {/* Email Button */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +39,6 @@ export default function Footer() {
                         </a>
                     </motion.div>
 
-                    {/* Social Links */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -74,10 +70,8 @@ export default function Footer() {
                         </a>
                     </motion.div>
 
-                    {/* Divider */}
                     <div className="w-full h-px bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent" style={{ marginTop: '20px', marginBottom: '20px' }} />
 
-                    {/* Bottom Bar */}
                     <div className="flex flex-col md:flex-row items-center justify-center text-gray-500 text-sm" style={{ gap: '40px' }}>
                         <p className="flex items-center gap-2">
                             <MapPin className="w-4 h-4" />

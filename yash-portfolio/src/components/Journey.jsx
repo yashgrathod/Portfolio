@@ -65,7 +65,6 @@ const iconColors = {
 export default function Journey() {
     return (
         <section id="journey" className="-mt-40 pb-20 relative overflow-hidden">
-            {/* Background decoration */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-yellow-500/5 rounded-full blur-3xl" />
 
             <div className="w-full flex flex-col items-center px-6 relative z-10">
@@ -81,9 +80,7 @@ export default function Journey() {
                     </p>
                 </motion.div>
 
-                {/* Timeline */}
                 <div className="relative max-w-4xl mx-auto flex flex-col items-center">
-                    {/* Center line */}
                     <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-yellow-500/50 hidden md:block z-20" />
 
                     <div className="space-y-8 md:space-y-12 w-full">
@@ -100,7 +97,6 @@ export default function Journey() {
                                     transition={{ delay: index * 0.1 }}
                                     className={`relative flex items-center ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}
                                 >
-                                    {/* Content */}
                                     <div className={`w-full md:w-1/2 ${isLeft ? 'md:pr-12 md:text-right' : 'md:pl-12 md:text-left'}`}>
                                         <div className={`glass-card p-8 bg-gradient-to-br ${typeColors[item.type]} inline-block w-full`}>
                                             <div className={`flex items-center gap-3 mb-3 ${isLeft ? 'md:flex-row-reverse' : ''}`}>
@@ -116,7 +112,6 @@ export default function Journey() {
                                         </div>
                                     </div>
 
-                                    {/* Center dot */}
                                     <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full hidden md:block z-10">
                                         <div className="absolute inset-0 bg-yellow-400 rounded-full animate-ping opacity-20" />
                                     </div>

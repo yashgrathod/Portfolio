@@ -6,7 +6,6 @@ export default function Projects() {
     return (
         <section id="projects" className="pb-24 relative z-10" style={{ transform: 'translateY(-100px)', marginBottom: '-100px' }}>
             <div className="container mx-auto px-8">
-                {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -19,10 +18,8 @@ export default function Projects() {
                     </p>
                 </motion.div>
 
-                {/* Spacer to force gap */}
                 <div style={{ height: '25px' }}></div>
 
-                {/* Projects Grid/Flex Layout for Centering */}
                 <div className="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
                     {projects.map((project, index) => (
                         <motion.div
@@ -33,7 +30,6 @@ export default function Projects() {
                             transition={{ delay: index * 0.1 }}
                             className="glass-card group hover:border-yellow-500/30 overflow-hidden flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] !p-0 rounded-3xl"
                         >
-                            {/* Project Image */}
                             <div className="h-48 w-full bg-zinc-900/50 relative overflow-hidden group-hover:bg-zinc-900/70 transition-colors">
                                 <img
                                     src={[
@@ -46,13 +42,10 @@ export default function Projects() {
                                     alt={project.title}
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                                 />
-                                {/* Overlay Gradient */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent opacity-60" />
                             </div>
 
-                            {/* Content Container */}
                             <div className="flex flex-col flex-grow" style={{ padding: '20px' }}>
-                                {/* Project Number & Title */}
                                 <div className="flex items-start justify-between mb-8">
                                     <div>
                                         <span className="text-yellow-400/50 text-sm font-mono">
@@ -65,12 +58,10 @@ export default function Projects() {
                                     <ArrowUpRight className="w-5 h-5 text-gray-600 group-hover:text-yellow-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
                                 </div>
 
-                                {/* Description */}
                                 <p className="text-gray-400 mb-8 leading-relaxed text-base">
                                     {project.description}
                                 </p>
 
-                                {/* Tech Stack */}
                                 <div className="flex flex-wrap gap-4" style={{ marginTop: '12px', marginBottom: '16px' }}>
                                     {project.techStack.map((tech) => (
                                         <span
@@ -83,7 +74,6 @@ export default function Projects() {
                                     ))}
                                 </div>
 
-                                {/* Features */}
                                 <ul className="space-y-3 mb-8">
                                     {project.features.map((feature, idx) => (
                                         <li key={idx} className="flex items-start gap-2 text-gray-400 text-sm">
@@ -95,7 +85,6 @@ export default function Projects() {
 
                             </div>
 
-                            {/* Links Footer */}
                             <div className="mt-auto border-t border-yellow-500/10 flex gap-6" style={{ padding: '20px' }}>
                                 <a
                                     href={project.link}

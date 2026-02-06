@@ -54,7 +54,6 @@ export default function Achievements() {
                     })}
                 </div>
 
-                {/* Stats Section */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

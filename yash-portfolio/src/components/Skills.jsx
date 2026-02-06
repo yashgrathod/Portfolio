@@ -14,7 +14,6 @@ import {
 import { SiCplusplus, SiFigma, SiTensorflow, SiJira, SiCanva } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
 
-// Language icons mapping
 const LanguageIcons = {
     'Python': DiPython,
     'JavaScript': DiJavascript1,
@@ -24,7 +23,6 @@ const LanguageIcons = {
     'SQL': DiMysql
 };
 
-// Tool icons mapping
 const ToolIcons = {
     'VS Code': DiVisualstudio,
     'Git & GitHub': DiGithubBadge,
@@ -37,14 +35,12 @@ const ToolIcons = {
 };
 
 export default function Skills() {
-    // Quadruple items for seamless loop
     const duplicatedLanguages = [...skills.technical, ...skills.technical, ...skills.technical, ...skills.technical];
     const duplicatedTools = [...skills.tools, ...skills.tools, ...skills.tools, ...skills.tools];
 
     return (
         <section id="skills" className="pt-24 pb-0 relative">
             <div className="container mx-auto px-8">
-                {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +53,6 @@ export default function Skills() {
                     </p>
                 </motion.div>
 
-                {/* Languages Marquee - Left to Right */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -88,7 +83,6 @@ export default function Skills() {
                     </div>
                 </motion.div>
 
-                {/* Tools Marquee - Right to Left */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -120,17 +114,14 @@ export default function Skills() {
                     </div>
                 </motion.div>
 
-                {/* 2-Column Layout: Left (Soft Skills + Interests) | Right (Coursework) */}
                 <div className="grid md:grid-cols-2 gap-10" style={{ marginTop: '4rem' }}>
 
-                    {/* Left Column - Soft Skills + Interests */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className="glass-card p-10 gap-8 h-full flex flex-col justify-between"
                     >
-                        {/* Soft Skills */}
                         <div style={{ marginBottom: '25px' }}>
                             <div className="flex items-center gap-3" style={{ marginBottom: '15px' }}>
                                 <div className="w-10 h-10 rounded-xl bg-yellow-500/10 flex items-center justify-center">
@@ -151,7 +142,6 @@ export default function Skills() {
                             </div>
                         </div>
 
-                        {/* Interests */}
                         <div>
                             <div className="flex items-center gap-3" style={{ marginBottom: '15px' }}>
                                 <div className="w-10 h-10 rounded-xl bg-yellow-500/10 flex items-center justify-center">
@@ -173,7 +163,6 @@ export default function Skills() {
                         </div>
                     </motion.div>
 
-                    {/* Right Column - Relevant Coursework */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}

@@ -36,7 +36,6 @@ export default function Hackathons() {
                             whileHover={{ y: -5 }}
                             className="glass-card relative overflow-hidden group" style={{ padding: '40px' }}
                         >
-                            {/* Trophy Icon */}
                             <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
                                 <Trophy className="w-20 h-20 text-yellow-400" />
                             </div>

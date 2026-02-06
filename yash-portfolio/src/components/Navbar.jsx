@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Mail, Linkedin, Github } from 'lucide-react';
 import { profile } from '../data/portfolio';
 
-// Simplified navigation - only main sections
 const navItems = [
     { name: "Home", href: "#home" },
     { name: "Journey", href: "#journey" },
@@ -16,7 +15,6 @@ export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
 
-    // Handle scroll effect
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
@@ -29,7 +27,6 @@ export default function Navbar() {
         setActiveSection(href.replace('#', ''));
         setIsOpen(false);
 
-        // For footer, scroll to bottom
         if (href === '#contact') {
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
             return;
@@ -45,7 +42,6 @@ export default function Navbar() {
 
     return (
         <>
-            {/* Main Navbar */}
             <nav
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
                     ? 'bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-yellow-500/10'
@@ -54,12 +50,9 @@ export default function Navbar() {
                 style={{ padding: scrolled ? '12px 16px' : '16px 16px' }}
             >
                 <div className="container mx-auto px-4">
-                    {/* Navigation Layout: 3 columns - left empty, center nav, right contact */}
                     <div className="hidden md:grid grid-cols-3 items-center">
-                        {/* Left empty space */}
                         <div></div>
 
-                        {/* Desktop Navigation - Center */}
                         <div className="flex items-center justify-center gap-6 lg:gap-12">
                             {navItems.map((item) => {
                                 const isActive = activeSection === item.href.replace('#', '');
@@ -84,7 +77,6 @@ export default function Navbar() {
                             })}
                         </div>
 
-                        {/* Contact icons - Right side */}
                         <div className="flex items-center justify-end gap-3 pr-4">
                             <span className="hidden lg:inline text-base font-medium text-gray-400 mr-2">Contact</span>
                             <a
@@ -115,7 +107,6 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    {/* Mobile Menu Button */}
                     <div className="md:hidden flex justify-end">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
@@ -127,11 +118,9 @@ export default function Navbar() {
                 </div>
             </nav>
 
-            {/* Mobile Menu Overlay */}
             <AnimatePresence>
                 {isOpen && (
                     <>
-                        {/* Backdrop */}
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -140,7 +129,6 @@ export default function Navbar() {
                             className="fixed inset-0 bg-black/80 backdrop-blur-sm z-40 md:hidden"
                         />
 
-                        {/* Menu Panel - Full screen on mobile */}
                         <motion.nav
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -149,7 +137,6 @@ export default function Navbar() {
                             className="fixed top-0 left-0 right-0 bg-[#0a0a0a] border-b border-yellow-500/20 z-50 md:hidden"
                         >
                             <div style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '60px', paddingBottom: '24px' }}>
-                                {/* Close button */}
                                 <button
                                     onClick={() => setIsOpen(false)}
                                     className="absolute top-6 right-6 p-3 rounded-xl bg-yellow-500/10 text-yellow-400"
@@ -157,7 +144,6 @@ export default function Navbar() {
                                     <X className="w-6 h-6" />
                                 </button>
 
-                                {/* Nav Items */}
                                 <div className="flex flex-col gap-4 mb-12 ml-4">
                                     {navItems.map((item) => {
                                         const isActive = activeSection === item.href.replace('#', '');
@@ -176,7 +162,6 @@ export default function Navbar() {
                                     })}
                                 </div>
 
-                                {/* Mobile Social Links */}
                                 <div style={{ marginTop: '30px', paddingTop: '24px', borderTop: '1px solid rgba(234, 179, 8, 0.1)' }}>
                                     <div className="flex gap-6 px-2 ml-4">
                                         <a

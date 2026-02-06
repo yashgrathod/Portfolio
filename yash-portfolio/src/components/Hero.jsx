@@ -9,15 +9,12 @@ export default function Hero() {
 
     return (
         <section id="home" className="min-h-screen flex items-center justify-center relative overflow-x-hidden">
-            {/* Background Effects - Centered */}
             <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-[600px] h-[600px] bg-yellow-500/10 rounded-full blur-3xl" />
             </div>
 
-            {/* Hero Card - Floating like navbar */}
             <div className="w-full max-w-4xl mx-4 md:mx-8 relative z-10">
                 <div className="glass-card p-12 md:p-20 flex flex-col items-center text-center">
-                    {/* Greeting */}
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -27,7 +24,6 @@ export default function Hero() {
                         Hello, I'm
                     </motion.p>
 
-                    {/* Name */}
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -39,7 +35,6 @@ export default function Hero() {
                         <span className="gradient-text">{profile.name.split(' ')[1]}</span>
                     </motion.h1>
 
-                    {/* Title */}
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -50,7 +45,6 @@ export default function Hero() {
                         {profile.title}
                     </motion.h2>
 
-                    {/* About */}
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -61,7 +55,6 @@ export default function Hero() {
                         {profile.about}
                     </motion.p>
 
-                    {/* Education Badge - More padding */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -80,7 +73,6 @@ export default function Hero() {
                         </div>
                     </motion.div>
 
-                    {/* CTA Buttons - Icon only circles */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -115,7 +107,6 @@ export default function Hero() {
                         </a>
                     </motion.div>
 
-                    {/* Stats */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}

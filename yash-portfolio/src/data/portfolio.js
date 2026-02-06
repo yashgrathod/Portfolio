@@ -1,7 +1,3 @@
-// ====================================
-// PORTFOLIO DATA - Edit this file to update your portfolio content
-// ====================================
-
 export const profile = {
     name: "Yash Rathod",
     title: "Software Engineering Intern",
